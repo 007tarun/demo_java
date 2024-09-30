@@ -12,12 +12,14 @@ public class Calculator {
         return a * b;
     }
 
-    public double divide(int a, int b) {
-        if (b == 0) {
-            throw new IllegalArgumentException("Division by zero");
-        }
-        return (double) a / b;
+   // Calculator.java
+public double divide(int a, int b) {
+    if (b == 0) {
+        throw new ArithmeticException("Division by zero");
     }
+    return (double) a / b;
+}
+
 
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
